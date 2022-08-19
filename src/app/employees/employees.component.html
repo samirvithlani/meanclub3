@@ -1,0 +1,49 @@
+
+<h1>EMPLOYEE DETAIL</h1>
+<h2>Name ={{employee.name}}</h2>
+<h2>Age :{{employee.age}}</h2>
+<h2>salary ->{{employee.salary}}</h2>
+
+
+<div>
+    <ul *ngFor="let e of employees">
+            <li>{{e.name}}</li>
+            <li>{{e.gender}}</li>
+            <li>{{e.city}}</li>
+            
+    </ul>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>City</th>
+        </tr>
+    
+        <tr *ngFor = "let e of employees">
+                <div *ngIf = "e.isActive">
+                <td>
+                    {{e.name}}
+                </td>
+                <td>
+                    {{e.gender}}
+                </td>
+                <td>
+                    {{e.city}}
+                </td>
+                <td>
+                    {{e.isActive}}
+                </td>
+                <td>
+                    <button (click) = "data(e.name)">ACTION</button>
+                </td>
+            </div>
+            
+        </tr>
+    </table>
+
+</div>
+
+
+<div>
+    <button class="btn btn-primary" (click) ="data()">DATA</button>
+</div>
