@@ -9,6 +9,8 @@ import { EmployeesComponent } from './employees/employees.component';
 import  {HttpClientModule} from '@angular/common/http';
 import { AdddoctorComponent } from './doctor/adddoctor/adddoctor.component';
 import { ListdoctorComponent } from './doctor/listdoctor/listdoctor.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RegisterDoctorComponent } from './doctor/register-doctor/register-doctor.component';
 
 
 @NgModule({
@@ -19,12 +21,14 @@ import { ListdoctorComponent } from './doctor/listdoctor/listdoctor.component';
     EmployeesComponent,
     AdddoctorComponent,
     ListdoctorComponent,
+    RegisterDoctorComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
