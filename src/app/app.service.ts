@@ -15,6 +15,17 @@ export class AppService {
 
   public getData():Observable<any>{
 
-    return this.http.get("https://reqres.in/api/users?page=2");
+    return this.http.get("http://localhost:8080/getalldoctors");
   }
+
+  public addDoctor(doctor):Observable<any>{
+
+    return this.http.post("http://localhost:8080/adddoctor",doctor);
+  }
+
+  public delteDoctor(dId):Observable<any>{
+      
+      return this.http.delete("http://localhost:8080/deletedoctor/"+dId);
+  }
+
 }

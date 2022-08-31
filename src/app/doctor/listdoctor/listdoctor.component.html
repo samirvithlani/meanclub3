@@ -1,0 +1,26 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Age</th>
+        <th scope="col">Exp</th>
+        <th scope="col">ACTION</th>
+      </tr>
+    </thead>
+    
+    <tbody *ngIf ="doctors">
+      <tr *ngFor ="let d of doctors">
+        <th scope="row">{{d.dId}}</th>
+        <td>{{d.dName}}</td>
+        <td>{{d.dEmail}}</td>
+        <td>{{d.dAge}}</td>
+        <td>{{d.dExp}}</td>
+        <td>
+            <button class="btn btn-danger" (click) = "deleteDoctor(d.dId)">DELETE</button>
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
