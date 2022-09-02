@@ -12,7 +12,8 @@ export class RegisterDoctorComponent implements OnInit {
   constructor(private service:AppService) { }
 
   doctorGroup  = new FormGroup({
-    dName :new FormControl('',Validators.required),
+    dName :new FormControl('',[Validators.required,Validators.minLength(3)]),
+    phone: new FormControl('',[Validators.required,Validators.pattern('[0-9]{10}')]),
   })
 
   addDoctor() {
