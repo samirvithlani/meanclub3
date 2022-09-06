@@ -2,11 +2,8 @@
   <form [formGroup]="doctorGroup" (submit)="addDoctor()">
     <div>
       <label>Name</label>
-      <input type="text" formControlName="dName" [(ngModel)]="dName" />
-      {{ dName }}
-
-      
-      
+      <input type="text" formControlName="dName" />
+  
 
       <span
         *ngIf="
