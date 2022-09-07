@@ -19,6 +19,7 @@
         <td>{{d.dExp}}</td>
         <td>
             <button class="btn btn-danger" (click) = "deleteDoctor(d.dId)">DELETE</button>
+            <a [routerLink]="['/editdoctor/',d.dId]"class="btn btn-primary">update</a>
         </td>
       </tr>
       

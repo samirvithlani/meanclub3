@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { EditdoctorComponent } from './doctor/editdoctor/editdoctor.component';
+import { ListdoctorComponent } from './doctor/listdoctor/listdoctor.component';
+import { RegisterDoctorComponent } from './doctor/register-doctor/register-doctor.component';
 import { CartComponent } from './ecom/cart/cart.component';
 import { DashboarComponent } from './ecom/dashboar/dashboar.component';
 import { NavbarComponent } from './ecom/navbar/navbar.component';
@@ -20,6 +23,13 @@ const routes: Routes = [
   },
   {
     path:'cart',component:CartComponent
+  },
+  {
+    path:'regdoctor',component:RegisterDoctorComponent
+  },{
+    path:'listdoctor',component:ListdoctorComponent
+  },{
+    path:'editdoctor/:id',component:EditdoctorComponent
   }
 ];
 

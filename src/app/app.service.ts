@@ -28,4 +28,9 @@ export class AppService {
       return this.http.delete("http://localhost:8080/deletedoctor/"+dId);
   }
 
+  public getDoctorById(dId):Observable<any>{
+
+    return this.http.get("http://localhost:8080/getdoctor/"+dId);
+  }
+
 }

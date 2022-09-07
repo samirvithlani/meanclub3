@@ -18,7 +18,7 @@ export class RegisterDoctorComponent implements OnInit {
 
   addDoctor() {
     
-    console.log(this.doctorGroup)
+    console.log(this.doctorGroup.value  )
     // this.service.addDoctor(this.doctorGroup.value).subscribe(data=>{
     //   console.log(data);
     //   alert('Doctor added successfully');

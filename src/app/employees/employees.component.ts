@@ -41,6 +41,9 @@ export class EmployeesComponent implements OnInit {
   ]
 
   //
+  updateDoctor(){
+    
+  }
   constructor() { }
 
   ngOnInit() {

@@ -16,6 +16,7 @@ import { ProductlistComponent } from './ecom/productlist/productlist.component';
 import { DashboarComponent } from './ecom/dashboar/dashboar.component';
 import { NavbarComponent } from './ecom/navbar/navbar.component';
 import { CartComponent } from './ecom/cart/cart.component';
+import { EditdoctorComponent } from './doctor/editdoctor/editdoctor.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { CartComponent } from './ecom/cart/cart.component';
     DashboarComponent,
     NavbarComponent,
     CartComponent,
+    EditdoctorComponent,
     
   ],
   imports: [
