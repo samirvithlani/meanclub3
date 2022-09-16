@@ -17,6 +17,12 @@ import { DashboarComponent } from './ecom/dashboar/dashboar.component';
 import { NavbarComponent } from './ecom/navbar/navbar.component';
 import { CartComponent } from './ecom/cart/cart.component';
 import { EditdoctorComponent } from './doctor/editdoctor/editdoctor.component';
+import { LogindoctorComponent } from './doctor/logindoctor/logindoctor.component';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {ToastModule} from 'primeng/toast';
+import { MessageService } from 'primeng/api';
+
 
 
 @NgModule({
@@ -34,15 +40,19 @@ import { EditdoctorComponent } from './doctor/editdoctor/editdoctor.component';
     NavbarComponent,
     CartComponent,
     EditdoctorComponent,
+    LogindoctorComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ToastrModule.forRoot(), // ToastrModule added,
+    BrowserAnimationsModule,
+    ToastModule
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

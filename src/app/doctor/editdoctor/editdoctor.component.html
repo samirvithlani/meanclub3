@@ -1,3 +1,4 @@
+<p-toast position="top-left"></p-toast>
 <div>
     <form [formGroup]="doctorGroup" (submit)="updateDoctor()">
       <div>
@@ -12,8 +13,8 @@
         </span>
       </div>
       <div>
-        <label>Phone</label>
-        <input type="text" formControlName="phone"  [(ngModel)]="doctor.dExp"/>
+        <label>EXP</label>
+        <input type="text" formControlName="dExp"  [(ngModel)]="doctor.dExp"/>
        
        
       </div>

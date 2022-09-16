@@ -32,5 +32,9 @@ export class AppService {
 
     return this.http.get("http://localhost:8080/getdoctor/"+dId);
   }
+  public updateDoctor(dId,doctor):Observable<any>{
+
+    return this.http.put("http://localhost:8080/updatedoctor/"+dId,doctor);
+  }
 
 }

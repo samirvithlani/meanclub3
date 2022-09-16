@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AuthGuard } from './auth.guard';
 import { EditdoctorComponent } from './doctor/editdoctor/editdoctor.component';
 import { ListdoctorComponent } from './doctor/listdoctor/listdoctor.component';
+import { LogindoctorComponent } from './doctor/logindoctor/logindoctor.component';
 import { RegisterDoctorComponent } from './doctor/register-doctor/register-doctor.component';
 import { CartComponent } from './ecom/cart/cart.component';
 import { DashboarComponent } from './ecom/dashboar/dashboar.component';
@@ -12,7 +14,7 @@ import { ProductlistComponent } from './ecom/productlist/productlist.component';
 
 const routes: Routes = [
   {
-    path:'dashboard',component:DashboarComponent
+    path:'dashboard',component:DashboarComponent,canActivate:[AuthGuard]
   },
   
   {
@@ -30,6 +32,9 @@ const routes: Routes = [
     path:'listdoctor',component:ListdoctorComponent
   },{
     path:'editdoctor/:id',component:EditdoctorComponent
+  },
+  {
+    path:'logindoctor',component:LogindoctorComponent
   }
 ];
 
