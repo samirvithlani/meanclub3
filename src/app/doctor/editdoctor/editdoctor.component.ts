@@ -12,6 +12,8 @@ import { AppService } from 'src/app/app.service';
 })
 export class EditdoctorComponent implements OnInit {
 
+  
+
   constructor(private routes:ActivatedRoute,private service:AppService,private router:Router,private toastr:ToastrService,private messageService:MessageService) { }
 
   updateDoctor(){

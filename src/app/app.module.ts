@@ -22,6 +22,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {ToastModule} from 'primeng/toast';
 import { MessageService } from 'primeng/api';
+import {TableModule} from 'primeng/table';
 
 
 
@@ -50,7 +51,9 @@ import { MessageService } from 'primeng/api';
     ReactiveFormsModule,
     ToastrModule.forRoot(), // ToastrModule added,
     BrowserAnimationsModule,
-    ToastModule
+    ToastModule,
+    TableModule
+    
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]

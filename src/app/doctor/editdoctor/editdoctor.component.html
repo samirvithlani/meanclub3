@@ -3,7 +3,7 @@
     <form [formGroup]="doctorGroup" (submit)="updateDoctor()">
       <div>
         <label>Name</label>
-        <input type="text" #dName (input)="dName.value" [(ngModel)]="doctor.dName"  formControlName="dName"/>
+        <!-- <input type="text" #dName (input)="dName.value" [(ngModel)]="doctor.dName" /> -->
         
         <span
           *ngIf="
