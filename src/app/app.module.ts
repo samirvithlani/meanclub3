@@ -23,6 +23,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {ToastModule} from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import {TableModule} from 'primeng/table';
+import { PipedemoComponent } from './pipedemo/pipedemo.component';
+import { TranformPipe } from './tranform.pipe';
+import { ConvertPipe } from './convert.pipe';
 
 
 
@@ -42,6 +45,9 @@ import {TableModule} from 'primeng/table';
     CartComponent,
     EditdoctorComponent,
     LogindoctorComponent,
+    PipedemoComponent,
+    TranformPipe,
+    ConvertPipe,
     
   ],
   imports: [

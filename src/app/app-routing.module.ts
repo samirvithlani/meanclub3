@@ -10,6 +10,7 @@ import { DashboarComponent } from './ecom/dashboar/dashboar.component';
 import { NavbarComponent } from './ecom/navbar/navbar.component';
 import { ProductComponent } from './ecom/product/product.component';
 import { ProductlistComponent } from './ecom/productlist/productlist.component';
+import { PipedemoComponent } from './pipedemo/pipedemo.component';
 
 
 const routes: Routes = [
@@ -35,6 +36,8 @@ const routes: Routes = [
   },
   {
     path:'logindoctor',component:LogindoctorComponent
+  },{
+    path:'pipe',component:PipedemoComponent
   }
 ];
 
