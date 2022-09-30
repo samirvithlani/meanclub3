@@ -37,4 +37,8 @@ export class AppService {
     return this.http.put("http://localhost:8080/updatedoctor/"+dId,doctor);
   }
 
+  public getAllTutorial():Observable<any>{
+    return this.http.get("https://tutorialapi1.herokuapp.com/tutorial");
+  }
+
 }

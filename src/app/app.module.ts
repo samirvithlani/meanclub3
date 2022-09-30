@@ -26,6 +26,9 @@ import {TableModule} from 'primeng/table';
 import { PipedemoComponent } from './pipedemo/pipedemo.component';
 import { TranformPipe } from './tranform.pipe';
 import { ConvertPipe } from './convert.pipe';
+import {ChartModule} from 'primeng/chart';
+import { EmployeechartComponent } from './employeechart/employeechart.component';
+
 
 
 
@@ -48,6 +51,7 @@ import { ConvertPipe } from './convert.pipe';
     PipedemoComponent,
     TranformPipe,
     ConvertPipe,
+    EmployeechartComponent,
     
   ],
   imports: [
@@ -58,7 +62,8 @@ import { ConvertPipe } from './convert.pipe';
     ToastrModule.forRoot(), // ToastrModule added,
     BrowserAnimationsModule,
     ToastModule,
-    TableModule
+    TableModule,
+    ChartModule
     
   ],
   providers: [MessageService],

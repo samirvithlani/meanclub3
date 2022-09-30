@@ -10,6 +10,8 @@ import { DashboarComponent } from './ecom/dashboar/dashboar.component';
 import { NavbarComponent } from './ecom/navbar/navbar.component';
 import { ProductComponent } from './ecom/product/product.component';
 import { ProductlistComponent } from './ecom/productlist/productlist.component';
+import { EmployeechartComponent } from './employeechart/employeechart.component';
+import { EmployeesComponent } from './employees/employees.component';
 import { PipedemoComponent } from './pipedemo/pipedemo.component';
 
 
@@ -38,6 +40,9 @@ const routes: Routes = [
     path:'logindoctor',component:LogindoctorComponent
   },{
     path:'pipe',component:PipedemoComponent
+  },
+  {
+    path:'chart',component:EmployeechartComponent
   }
 ];
 
