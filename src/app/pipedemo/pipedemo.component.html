@@ -10,6 +10,7 @@
 <p>last name = {{lastname | lowercase}}</p>
 <p>last name = {{title | titlecase}}</p>
 
+<p>Balance = {{bal | currency}}</p>
 <p>Balance = {{bal | currency:'CAD'}}</p>
 <p>Balance = {{bal | currency:'INR'}}</p>
 
@@ -19,5 +20,9 @@
 </p>
 <p>
     {{0|convert}}
+</p>
+
+<p>
+    {{100 |currencycon : 'INR'}}
 </p>
 

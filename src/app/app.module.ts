@@ -28,6 +28,7 @@ import { TranformPipe } from './tranform.pipe';
 import { ConvertPipe } from './convert.pipe';
 import {ChartModule} from 'primeng/chart';
 import { EmployeechartComponent } from './employeechart/employeechart.component';
+import { CurrencyconPipe } from './currencycon.pipe';
 
 
 
@@ -52,6 +53,7 @@ import { EmployeechartComponent } from './employeechart/employeechart.component'
     TranformPipe,
     ConvertPipe,
     EmployeechartComponent,
+    CurrencyconPipe,
     
   ],
   imports: [
