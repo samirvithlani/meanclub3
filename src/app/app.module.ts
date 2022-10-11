@@ -29,6 +29,10 @@ import { ConvertPipe } from './convert.pipe';
 import {ChartModule} from 'primeng/chart';
 import { EmployeechartComponent } from './employeechart/employeechart.component';
 import { CurrencyconPipe } from './currencycon.pipe';
+import { GoogleComponent } from './google/google.component';
+import { YoutubeComponent } from './youtube/youtube.component';
+import { IndiaComponent } from './india/india.component';
+import { PakistanComponent } from './pakistan/pakistan.component';
 
 
 
@@ -54,6 +58,10 @@ import { CurrencyconPipe } from './currencycon.pipe';
     ConvertPipe,
     EmployeechartComponent,
     CurrencyconPipe,
+    GoogleComponent,
+    YoutubeComponent,
+    IndiaComponent,
+    PakistanComponent,
     
   ],
   imports: [

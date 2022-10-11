@@ -12,6 +12,8 @@ import { ProductComponent } from './ecom/product/product.component';
 import { ProductlistComponent } from './ecom/productlist/productlist.component';
 import { EmployeechartComponent } from './employeechart/employeechart.component';
 import { EmployeesComponent } from './employees/employees.component';
+import { GoogleComponent } from './google/google.component';
+import { IndiaComponent } from './india/india.component';
 import { PipedemoComponent } from './pipedemo/pipedemo.component';
 
 
@@ -43,6 +45,13 @@ const routes: Routes = [
   },
   {
     path:'chart',component:EmployeechartComponent
+  },
+  {
+    path:'google',component:GoogleComponent
+  }
+  ,
+  {
+    path:'india',component:IndiaComponent
   }
 ];
 
