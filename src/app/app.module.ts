@@ -33,6 +33,7 @@ import { GoogleComponent } from './google/google.component';
 import { YoutubeComponent } from './youtube/youtube.component';
 import { IndiaComponent } from './india/india.component';
 import { PakistanComponent } from './pakistan/pakistan.component';
+import { FileuploadComponent } from './fileupload/fileupload.component';
 
 
 
@@ -62,6 +63,7 @@ import { PakistanComponent } from './pakistan/pakistan.component';
     YoutubeComponent,
     IndiaComponent,
     PakistanComponent,
+    FileuploadComponent,
     
   ],
   imports: [

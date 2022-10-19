@@ -12,6 +12,7 @@ import { ProductComponent } from './ecom/product/product.component';
 import { ProductlistComponent } from './ecom/productlist/productlist.component';
 import { EmployeechartComponent } from './employeechart/employeechart.component';
 import { EmployeesComponent } from './employees/employees.component';
+import { FileuploadComponent } from './fileupload/fileupload.component';
 import { GoogleComponent } from './google/google.component';
 import { IndiaComponent } from './india/india.component';
 import { PipedemoComponent } from './pipedemo/pipedemo.component';
@@ -52,6 +53,8 @@ const routes: Routes = [
   ,
   {
     path:'india',component:IndiaComponent
+  },{
+    path:'file',component:FileuploadComponent
   }
 ];
 

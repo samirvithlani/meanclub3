@@ -41,4 +41,9 @@ export class AppService {
     return this.http.get("https://tutorialapi1.herokuapp.com/tutorial");
   }
 
+
+  public uploadFile(file:any):Observable<any>{
+    return this.http.post("http://localhost:8080/upload",file);
+  }
+
 }
