@@ -34,6 +34,8 @@ import { YoutubeComponent } from './youtube/youtube.component';
 import { IndiaComponent } from './india/india.component';
 import { PakistanComponent } from './pakistan/pakistan.component';
 import { FileuploadComponent } from './fileupload/fileupload.component';
+import { Comp1Component } from './comp1/comp1.component';
+import { Comp2Component } from './comp2/comp2.component';
 
 
 
@@ -64,6 +66,8 @@ import { FileuploadComponent } from './fileupload/fileupload.component';
     IndiaComponent,
     PakistanComponent,
     FileuploadComponent,
+    Comp1Component,
+    Comp2Component,
     
   ],
   imports: [
